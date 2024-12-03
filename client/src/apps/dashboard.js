@@ -7,7 +7,7 @@ const addTaskForm = document.getElementById('add-task-form');
 const token = localStorage.getItem('token');
 console.log(token);
 if (!token) {
-  window.location.href = '../../../index.html';
+  window.location.href = '../../index.html';
 }
 
 // Fetch tasks
