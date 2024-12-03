@@ -11,6 +11,6 @@ document.getElementById('register-form').addEventListener('submit', async (e) =>
     alert(response.error);
   } else {
     alert('Registration successful! Redirecting to login...');
-    window.location.href = '../views/login.html';
+    window.location.href = '/client/src/views/login.html';
   }
 });

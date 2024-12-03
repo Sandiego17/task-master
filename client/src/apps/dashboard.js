@@ -7,7 +7,7 @@ const addTaskForm = document.getElementById('add-task-form');
 const token = localStorage.getItem('token');
 console.log(token);
 if (!token) {
-  window.location.href = '../../index.html';
+  window.location.href = '/client/index.html';
 }
 
 // Fetch tasks
@@ -128,7 +128,7 @@ document.getElementById('filter-btn').addEventListener('click', async () => {
 // Logout
 document.getElementById('logout-btn').addEventListener('click', () => {
   localStorage.removeItem('token');
-  window.location.href = 'login.html';
+  window.location.href = '/client/src/views/login.html';
 });
 
 // Load tasks on page load

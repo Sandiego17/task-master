@@ -11,7 +11,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
       localStorage.setItem('token', result.token); // Save token to localStorage
       console.log('Token:', result.token);
       alert('Login successful!');
-      window.location.href = '../views/dashboard.html'; // Navigate to dashboard
+      window.location.href = '/client/src/views/dashboard.html'; // Navigate to dashboard
     } else {
       // Handle invalid login or missing token
       alert(result.error || 'Login failed. Please try again.');

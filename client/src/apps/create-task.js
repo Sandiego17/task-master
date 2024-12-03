@@ -18,6 +18,6 @@ document.getElementById('create-task-form').addEventListener('submit', async (e)
     alert(response.error);
   } else {
     alert('Task created successfully!');
-    window.location.href = '../views/dashboard.html';
+    window.location.href = '/client/src/views/dashboard.html';
   }
 });
